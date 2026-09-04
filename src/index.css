@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import 'tailwindcss';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+@theme {
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-ground: #f7f5f0;
+  --color-ink: #1a1814;
+  --color-ink-soft: #5a574f;
+  --color-ink-muted: #9c9890;
+  --color-accent: #2a5c45;
+  --color-accent-light: #e6f0eb;
+  --color-rule: #dedad3;
+  --color-card: #ffffff;
+  --color-warn: #c04f2a;
+  --color-warn-light: #fdf0eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-ground);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--color-rule); border-radius: 3px; }
+
+.font-display { font-family: var(--font-display); }
+.font-mono-tag { font-family: var(--font-mono); }
